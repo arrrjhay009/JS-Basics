@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>JS Array Elements</h1>
+    <p id="arrayFruits"></p>
+    <p id="arrayTrees"></p>
+    <p id="arrayHeroes"></p>
+    <p id="arrayHero1"></p>
+    <p id="arrayHero2"></p>
+    <p id="arrayHero3"></p>
+
+    <script>
+        const fruits = []; // declare a variable and assign an empty array
+        fruits [0] = 'Apple'; // assign value in each array index from 0 to 3
+        fruits [1] = 'Banana';
+        fruits [2] = 'Strawberry';
+        fruits [3] = 'Grapes';
+        document.getElementById('arrayFruits').innerHTML = fruits; // use DOM to display values in browser using innerHTML
+
+        const trees = new Array('Pine Tree', 'Banana Tree', 'Coconut Tree', 'Mango Tree');
+        trees[2] = 'Moringa Tree';
+        document.getElementById('arrayTrees').innerHTML = trees;
+
+        const heroes = ['Spiderman', 'Batman', 'Superman', 'Robin'];
+        document.getElementById('arrayHeroes').innerHTML = heroes;
+        document.getElementById('arrayHero1').innerHTML = heroes[1];
+        document.getElementById('arrayHero2').innerHTML = heroes[2];
+        document.getElementById('arrayHero3').innerHTML = heroes[3];
+
+    </script>
+    
+</body>
+</html>

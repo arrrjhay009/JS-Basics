@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics Part 2</title>
+
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>JS Part 2</h1>
+    <h2>We can change a content with the use of JavaScript.</h2>
+    <button type="button" onclick="document.getElementById('jsDemo').innerHTML = 'Hello! This is my second JS example.'">Change the HTML content</button>
+    <p id="jsDemo">We can change the HTML content using the JavaScript.</p>
+
+    <hr>
+
+    <h2>We can change CSS styles using JavaScript</h2>
+    <p id="changeStyle">JS can change the style of an element.</p>
+    <button type="button" onclick="document.getElementById('changeStyle').style.fontSize = '50px' ">Click to change Font Size</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('body').style.backgroundColor = 'dodgerblue' ">Click to change BG Color</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('body').style.color = 'white' ">Click to change Text Color to White</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('changeStyle').style.color = 'yellow' ">Click to change Paragraph Text Color to Yellow</button>
+    <hr>
+
+    <h2>We can hide HTML elements using JS.</h2>
+    <img src="https://img.freepik.com/free-vector/sticker-template-with-saturn-planet-isolated_1308-57630.jpg?w=740&t=st=1690459162~exp=1690459762~hmac=7c77b1d134d3beb2e3b95b518e6b5220940f8949ac6c3e56e6d306c4afad7184" alt="saturn image" id="saturn">
+    <br>
+    <button type="button" onclick="document.getElementById('saturn').style.display = 'none' ">Hide the Image</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('saturn').style.display = 'block' ">Show the Image</button>
+</body>
+</html>
