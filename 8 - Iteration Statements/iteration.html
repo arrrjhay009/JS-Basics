@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <h2>JS For Loops</h2>
+
+    <p id="forLoop"></p>
+
+    <script>
+        const cars = ["Toyota", "Ferarri", "Honda"];
+        let text = "";
+        for (i = 0; i < cars.length; i++) {
+            text += cars[i] + "<br>";
+        }
+        document.getElementById("forLoop").innerHTML = text;
+    </script>
+    
+</body>
+</html>
